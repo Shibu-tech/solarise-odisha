@@ -6,7 +6,7 @@ const customerSchema = new mongoose.Schema({
         required:true
     },
     phone:{
-        type:String,
+        type:Number,
         required:true
     },
     customerNumber:{
@@ -30,8 +30,11 @@ const customerSchema = new mongoose.Schema({
     pancardNumber:{
         type:String
     },
-    bankPassbook:{
-        fileUrl:Boolean
+    bankPassbookUpload:{
+        type:Boolean
+    },
+    bankPassbookUrl:{
+        type:String
     },
     agentId:{
         type:mongoose.Schema.Types.ObjectId,
